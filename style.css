@@ -1,45 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
-body{
-    width:100%;
-    background: rgba(211, 211, 211, 0.281);
-    
+body {
+  width: 100%;
+  background: #fff;
 }
+header{
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+  background:rgb(56, 25, 58);
+  margin-bottom: 1rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#temp-menu{
+  rotate: 90deg;
+}
+main {
+  display: grid;
+  place-items: center;
+}
+section, nav{
+  width: 90%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(49, 38, 68);
+  padding: 2rem 0;
+  gap: 1.5rem;
+}
+.content > h1 {
+  font-size: bold;
+}
+.content > p {
+  font-size: .85rem;
+  line-height: 1.75rem;
+}
+.hero-img {
+  width: 100%;
+  background: #fff;
+  display: grid;
+  place-items: center;
 
-main{
-    display: flex; 
-    justify-content: center;
+}
+img {
+  width: inherit;
+}
+@media (min-width:560px) {
+  header{
+    margin-bottom: 3rem;
+  }
+  section, nav{
+    width: 86%;
+  }
+  section{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column; 
-    width: 90%;
-    margin: auto;
-}
-
-.content{ 
-    background: #fff;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   color: rgb(53, 13, 56);
-   padding: 1rem;
-}
-.content>h1{
-    margin: 1rem auto;
-    font-size: bold;
-}
-.content>p{
-    margin: 1rem auto;
-}
-.hero-img{
-    width: 100%;
-    background: #fff;
-}
-img{
-    width: inherit;
+  }
+  .hero-img{
+    max-width: 500px;
+  }
+  .content{
+    gap: 4rem;
+    max-width: 500px;
+  }
+  .content > h1 {
+    font-size: 2.5rem;
+  }
+  .content > p {
+    font-size: .9rem;
+  }
 }
